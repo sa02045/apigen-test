@@ -7,9 +7,6 @@
     "type": "git",
     "url": "https://github.com/sa02045/apigen-test.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "bin": {
     "api-type-generator": "./dist/parser.js"
   },
