@@ -1,6 +1,6 @@
 {
   "name": "@sa02045/api-gen-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "API TypeScript generator",
   "main": "dist/parser.js",
   "repository": {
