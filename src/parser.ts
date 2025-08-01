@@ -163,8 +163,12 @@ function parseApi(apiPath: string, method: string, config: any) {
   const fileName = `${method}${operationId}.ts`;
   const filePath = path.join(dirPath, fileName);
 
-  const requestInterface = `export interface RequestBody {\n${requestBodyContent}\n}`;
-  const responseInterface = `export interface Response {\n${responseDataContent}\n}`;
+  const requestInterface = requestBodyContent
+    ? `export interface RequestBody {\n${requestBodyContent}\n}`
+    : "export type RequestBody = void;";
+  const responseInterface = responseDataContent
+    ? `export interface Response {\n${responseDataContent}\n}`
+    : "export type Response = void;";
 
   const fileContent = `${requestInterface}\n\n${responseInterface}\n`;
 
