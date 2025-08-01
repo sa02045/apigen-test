@@ -1,11 +1,11 @@
 {
-  "name": "@seunghee-jo/api-gen",
+  "name": "@sa02045/api-gen-test",
   "version": "1.0.0",
   "description": "API TypeScript generator",
   "main": "dist/parser.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seunghee-jo/apigen-test.git"
+    "url": "https://github.com/sa02045/apigen-test.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
