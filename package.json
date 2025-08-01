@@ -1,0 +1,33 @@
+{
+  "name": "@seunghee-jo/api-gen",
+  "version": "1.0.0",
+  "description": "API TypeScript generator",
+  "main": "dist/parser.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seunghee-jo/apigen-test.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bin": {
+    "api-type-generator": "./dist/parser.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "parse": "ts-node src/parser.ts",
+    "build": "tsc",
+    "start": "node dist/parser.js",
+    "dev": "ts-node src/parser.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cosmiconfig": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cosmiconfig": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
